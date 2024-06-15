@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulang Tahun Rama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section>
+        <div class="card">
+          <div class="image-container">
+            <img loading="lazy" class="card-image" src="./image/ultah.jpg" />
+            <div class="text-overlay">Hadirilah Pesta Ulang Tahunku</div>
+          </div>
+          <div class="card-content" style="max-width: 100%">
+            <h1 style="font-weight: 700">Teruntuk kawanku,</h1>
+            <div style="font-size: 18px">
+              Kami mengundangmu untuk datang ke pesta ulang tahun di rumah kami.
+              Kami harap kamu bisa datang ke sini dan merayakan ulang tahun ini
+              bersama-sama, yang akan diadakan pada :
+              <ul>
+                <li>
+                  Tempat :
+                  <b
+                    >Mie Gacoan Citra Raya
+                    <a
+                      target="_blank"
+                      href="https://maps.app.goo.gl/LGdXc3kCprDYPne8A"
+                      >Google Map</a
+                    ></b
+                  >
+                </li>
+                <li>Waktu : <b>Minggu, 23 Juni 2024</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card">
+          <div class="card-content">
+            <h1>Kirimkan Pesan dan Konfirmasi</h1>
+            <form name="konfirm">
+              <section>
+                <label for="nama">Nama</label>
+                <input
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  placeholder="Isi namamu di sini"
+                />
+              </section>
+              <section>
+                <label for="alamat">Alamat</label>
+                <textarea
+                  name="alamat"
+                  id="alamat"
+                  placeholder="Isi alamatmu"
+                ></textarea>
+              </section>
+              <section>
+                <label>Apakah Kamu Hadir?</label>
+                <ul style="list-style-type: none; margin: 0; padding: 0 10px">
+                  <li>
+                    <label
+                      ><input type="radio" value="Hadir" name="kehadiran" checked />
+                      Hadir</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input
+                        type="radio"
+                        value="Tidak Hadir"
+                        name="kehadiran"
+                      />
+                      Tidak</label
+                    >
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <label for="pesan">Pesan dan Do'a</label>
+                <textarea name="pesan" id="pesan" placeholder="Tuliskan pesan dan doamu"></textarea>
+              </section>
+              <button type="submit">Konfirmasi</button>
+            </form>
+            <script>
+              konfirm.addEventListener("submit", (e) => {
+                e.preventDefault(e);
+                alert("Terima kasih untuk pesan dan doanya, kami tunggu kehadiranmu");
+              })
+            </script>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
